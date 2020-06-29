@@ -13,7 +13,7 @@ namespace DesignPatterns
             coolingThermostat.Control();
             coolingThermostat = new ThermoStat().ExecuteCreate(Actions.Warming , 21.5);
             coolingThermostat.Control();
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }

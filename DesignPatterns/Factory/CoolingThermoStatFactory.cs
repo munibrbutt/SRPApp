@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DesignPatterns.Factory
 {
-    public abstract class CoolingThermoStatFactory : ThermoStatFactory
+    public class CoolingThermoStatFactory : ThermoStatFactory
     {
         public override IThermoStat Create(double temp) =>       
          new CoolingThermoStat(temp);      

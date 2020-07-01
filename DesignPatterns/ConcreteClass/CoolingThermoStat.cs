@@ -14,7 +14,7 @@ namespace DesignPatterns.ConcreteClass
         }
         public void Control()
         {
-            Console.WriteLine("Cooling the house {_temp} degrees");
+            Console.WriteLine($"Cooling the house {_temp} degrees");
         }
     }
 }

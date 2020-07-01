@@ -19,7 +19,7 @@ namespace DesignPatterns
             {
                  //var a = Enum.GetName(typeof(Actions), action);
                 
-                 var factory = (ThermoStatFactory)Activator.CreateInstance(Type.GetType("DesignPatterns." + Enum.GetName(typeof(Actions),action) + "ThermoStatFactory"));
+                 var factory = (ThermoStatFactory)Activator.CreateInstance(Type.GetType("DesignPatterns.Factory." + Enum.GetName(typeof(Actions),action) + "ThermoStatFactory"));
                 //var factory = Activator.CreateInstance(Type.GetType(a)) as ThermoStatFactory;
                 _factories.Add(action, factory);
             }
